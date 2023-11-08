@@ -21,7 +21,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <sofa.ark.version>2.0.6</sofa.ark.version>
+        <sofa.ark.version>2.2.4-SNAPSHOT</sofa.ark.version>
     </properties>
 
     <dependencies>
@@ -80,21 +80,21 @@
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>pojo-ark-plugin</artifactId>
-<!--            <classifier>ark-plugin</classifier>-->
+            <classifier>ark-plugin</classifier>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>hessian3-ark-plugin</artifactId>
-<!--            <classifier>ark-plugin</classifier>-->
+            <classifier>ark-plugin</classifier>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>hessian4-ark-plugin</artifactId>
-<!--            <classifier>ark-plugin</classifier>-->
+            <classifier>ark-plugin</classifier>
             <version>1.0.0</version>
         </dependency>
 
@@ -127,48 +127,35 @@
         </profile>
     </profiles>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>com.alipay.sofa</groupId>
-                <artifactId>sofa-ark-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>default-cli</id>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <!-- 配置信息 -->
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
 <!--    <build>-->
 <!--        <plugins>-->
 <!--            <plugin>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--                <version>2.6.6</version>-->
-
-<!--                <configuration>-->
-<!--                    <outputDirectory>target</outputDirectory>-->
-<!--                    <classifier>ark-biz</classifier>-->
-<!--                </configuration>-->
+<!--                <groupId>com.alipay.sofa</groupId>-->
+<!--                <artifactId>sofa-ark-maven-plugin</artifactId>-->
 <!--                <executions>-->
 <!--                    <execution>-->
-<!--                        <id>package</id>-->
+<!--                        <id>default-cli</id>-->
 <!--                        <goals>-->
 <!--                            <goal>repackage</goal>-->
 <!--                        </goals>-->
 <!--                    </execution>-->
 <!--                </executions>-->
+<!--                <configuration>-->
+<!--                    &lt;!&ndash; 配置信息 &ndash;&gt;-->
+<!--                </configuration>-->
 <!--            </plugin>-->
 <!--        </plugins>-->
 <!--    </build>-->
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.6.6</version>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
