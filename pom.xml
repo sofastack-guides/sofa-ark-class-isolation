@@ -80,21 +80,21 @@
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>pojo-ark-plugin</artifactId>
-            <classifier>ark-plugin</classifier>
+<!--            <classifier>ark-plugin</classifier>-->
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>hessian3-ark-plugin</artifactId>
-            <classifier>ark-plugin</classifier>
+<!--            <classifier>ark-plugin</classifier>-->
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>hessian4-ark-plugin</artifactId>
-            <classifier>ark-plugin</classifier>
+<!--            <classifier>ark-plugin</classifier>-->
             <version>1.0.0</version>
         </dependency>
 
