@@ -6,7 +6,7 @@
 2. 在plugin代码仓库里执行 `mvn install -DskipTests`
 3. 下载本仓库代码 `git clone https://github.com/sofastack-guides/sofa-ark-class-isolation.git`
 4. 在本仓库代码里执行 `mvn clean package -DskipTests`
-5. 本地IDE启动，或者 `java -jar sofa-ark-class-isolation-0.0.1-SNAPSHOT-ark-executable.jar`
+5. 本地IDE启动，或者 `java -jar sofa-ark-class-isolation-0.0.1-SNAPSHOT-ark-executable.jar`，注意不要加 `-Dsofa.ark.embed.enable=true` 的参数
 6. 检查是否生效，访问两个不同版本的请求，查看日志
 ```shell
 curl http://localhost:8080/hello-hessian3
